@@ -1,4 +1,4 @@
-import GoogleProvider from "next-auth/providers/google";
+{/*import GoogleProvider from "next-auth/providers/google";
 import EmailProvider from "next-auth/providers/email";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import config from "@/config";
@@ -55,4 +55,4 @@ export const authOptions = {
     // It will be used in the login flow to display your logo. If you don't add it, it will look faded.
     logo: `https://${config.domainName}/logoAndName.png`,
   },
-};
+};*/}

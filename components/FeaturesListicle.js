@@ -461,20 +461,18 @@ const FeaturesListicle = () => {
               className={`flex flex-col items-center justify-center gap-3 select-none cursor-pointer p-2 duration-200 group`}
             >
               <span
-                className={`duration-100 ${
-                  featureSelected === feature.name
+                className={`duration-100 ${featureSelected === feature.name
                     ? "text-primary"
                     : "text-base-content/30 group-hover:text-base-content/50"
-                }`}
+                  }`}
               >
                 {feature.svg}
               </span>
               <span
-                className={`font-semibold text-sm ${
-                  featureSelected === feature.name
+                className={`font-semibold text-sm ${featureSelected === feature.name
                     ? "text-primary"
                     : "text-base-content/50"
-                }`}
+                  }`}
               >
                 {feature.name}
               </span>
