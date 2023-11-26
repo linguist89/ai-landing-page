@@ -32,7 +32,7 @@ const questions_tech = [
   }
 ];
 
-const questions_social_emotional = [
+const questions_social = [
   {
     question: "How would you rate your ability to work effectively in a team?",
     options: ["Poor", "Good", "Excellent"],
@@ -152,7 +152,7 @@ const Questionnaire = ({ questions }) => {
       <form onSubmit={handleSubmit} className="space-y-4">
         {questions.map((item, index) => (
           <div key={index} className="mb-4">
-            <label className="block mb-2 text-sm font-medium text-gray-900">{item.question}</label>
+            <label className="mt-3 text-sm text-base-content/80">{item.question}</label>
             <div className="flex flex-col">
               {item.options.map((option, optionIndex) => (
                 <label key={optionIndex} className="inline-flex items-center mt-2">
@@ -163,7 +163,7 @@ const Questionnaire = ({ questions }) => {
                     onChange={() => handleChange(index, option)}
                     className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
                   />
-                  <span className="ml-2 text-sm text-gray-900">{option}</span>
+                  <span className="ml-2 text-sm text-gray-500">{option}</span>
                 </label>
               ))}
             </div>
@@ -211,10 +211,10 @@ const features = [
     ),
   },
   {
-    name: "Social and Emotional Skills",
+    name: "Social Skills",
     description: (
       <>
-        <Questionnaire questions={questions_social_emotional} />
+        <Questionnaire questions={questions_social} />
       </>
     ),
     svg: (
@@ -315,21 +315,19 @@ const FeaturesListicle = () => {
   }, [featureSelected, hasClicked]);
 
   return (
-    <section className="py-24" id="features">
+    <section className="pt-24" id="features">
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
           <p className="text-accent font-medium text-sm font-mono mb-3">
-            const launch_time = &quot;Today&quot;;
+            Take control of your future
           </p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            Supercharge your app instantly, launch faster, make $
+            Skills assessment to show you how to future-proof your career
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            Login users, process payments and send emails at lightspeed. Spend
-            your time building your startup, not integrating APIs. ShipFast
-            provides you with the boilerplate code you need to launch, FAST.
+            The following four sections will help you assess your current skills and identify areas for improvement. Each section contains three questions that will help you understand your current skill level and provide suggestions for how to improve.
           </div>
         </div>
       </div>
