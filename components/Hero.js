@@ -18,7 +18,7 @@ const Hero = () => {
           AI Could take your job in months, not years
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          AI\'s potential to impact jobs in months instead of years can be viewed as an opportunity for personal growth and adaptation, leading to a hopeful future with more career options not less.
+          AI&apos;'s potential to impact jobs in months instead of years can be viewed as an opportunity for personal growth and adaptation, leading to a hopeful future with more career options not less.
         </p>
         <button
           className="btn btn-primary btn-wide"

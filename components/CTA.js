@@ -17,7 +17,7 @@ const CTA = () => {
           </h2>
           <p className="text-lg opacity-80 mb-12 md:mb-16">
             Preorder now and you will be part of developing the book. {" "}
-            You will get early access, contribute to the content and get an early bird discount. Don\'t miss out.
+            You will get early access, contribute to the content and get an early bird discount. Don&apos;t miss out.
           </p>
 
           <script async
