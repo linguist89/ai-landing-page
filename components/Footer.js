@@ -42,8 +42,10 @@ const Footer = () => {
               <div className="footer-title font-semibold text-base-content tracking-widest text-sm md:text-left mb-3">
                 CONTACT
               </div>
-
               <div className="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm">
+                <Link href="https://spsdigitaltech.com/" className="link link-hover">
+                  https://spsdigitaltech.com/
+                </Link>
                 <Link href="mailto:contact@spsdigitaltech.com" className="link link-hover">
                   contact@spsdigitaltech.com
                 </Link>
