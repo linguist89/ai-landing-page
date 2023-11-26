@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Script
+        id="hotjar-script"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
