@@ -1,8 +1,6 @@
-import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import CodeGrid from "@/components/CodeGrid";
 import Header from "@/components/Header";
-import TestSection from "@/components/CustomTestSection";
+import FAQ from "@/components/CustomFAQ";
 
 export default function Home() {
 
@@ -10,9 +8,7 @@ export default function Home() {
         <>
             <Header />
             <main>
-                <TestSection />
-                <Hero />
-                <CodeGrid />
+                <FAQ />
             </main>
             <Footer />
         </>

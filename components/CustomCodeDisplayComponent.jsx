@@ -8,6 +8,10 @@ import StripedDataTable from "./CustomStripedDataTable";
 import FilterDataTable from "./CustomFilterDataTable";
 import DeleteDataTable from "./CustomDeleteDataTable";
 import SortingDataTable from "./CustomSortingDataTable";
+import NavigationMenu from "./CustomNavigationMenu";
+import FAQ from "./CustomFAQ";
+import HeaderCircular from "./CustomHeaderCircular";
+import HeroSection from "./CustomHeroSection";
 
 const CodeDisplayComponent = ({ componentName }) => {
   const [isCodeVisible, setIsCodeVisible] = useState(false);
@@ -24,6 +28,10 @@ const CodeDisplayComponent = ({ componentName }) => {
         "FilterDataTable",
         "DeleteDataTable",
         "SortingDataTable",
+        "NavigationMenu",
+        "FAQ",
+        "HeaderCircular",
+        "HeroSection",
       ].includes(componentName)
     ) {
       console.error("Invalid component name:", componentName);
@@ -54,6 +62,14 @@ const CodeDisplayComponent = ({ componentName }) => {
         return <DeleteDataTable />;
       case "SortingDataTable":
         return <SortingDataTable />;
+      case "NavigationMenu":
+        return <NavigationMenu />;
+      case "FAQ":
+        return <FAQ />;
+      case "HeaderCircular":
+        return <HeaderCircular />;
+      case "HeroSection":
+        return <HeroSection />;
       default:
         return <p>Component not found.</p>;
     }
@@ -65,7 +81,7 @@ const CodeDisplayComponent = ({ componentName }) => {
       <div className="tab-buttons flex space-x-2 mb-4">
         <button
           onClick={toggleCodeVisibility}
-          className="bg-blue-500 text-white p-2 rounded"
+          className="btn btn-primary btn-sm"
         >
           {isCodeVisible ? "Hide Code" : "Show Code"}
         </button>
